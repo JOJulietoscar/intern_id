@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intern ID</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Use Poppins font for a modern, clean look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .bg-video video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .logo {
+      width: 146px; /* adjust size as needed */
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 320px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-align: center; /* Keep logo & name centered */
+    }
+
+    header h1 {
+      margin: 0 0 20px 0;
+      font-weight: 600;
+      font-size: 36px;
+      letter-spacing: 0px;
+    }
+
+    .details {
+      text-align: left; /* Align details left for professional look */
+      margin-top: 10px;
+    }
+
+    .details p {
+      margin: 8px 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .details p strong {
+      display: inline-block;
+      width: 90px; /* Consistent label width */
+      color: #f0df2b;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 10px;
+      color: #ffffff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="bg-video">
+    <video autoplay loop muted playsinline>
+      <source src="video-light.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <!-- Employee ID Card -->
+  <div class="card">
+    <img src="logo.png" alt="Company Logo" class="logo">
+    <header><h1>INTERN</h1></header>
+    <div class="details">
+      <p><strong>Website</strong> : www.aifuturix.in</p>
+      <p><strong>Phone</strong> : +91 86800 00202</p>
+      <p><strong>Email</strong> :  care@aifuturix.in</p>
+      <p><strong>Location</strong> : Coimbatore, Tamilnadu</p>
+    </div>
+    <footer>AI Futurix Employee</footer>
+  </div>
+</body>
+</html>
